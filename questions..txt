@@ -1,0 +1,106 @@
+Question -4: In this small project, we will sort a mixed list, by saying mixed list, we mean, the list contains not only basic items, for examples, numbers, but also other lists. To make thing simple, we assume, the lists embedding in this list contain only basic items. For example, [1, [13,12], [6,5,7,8,9]] is such a list. For basic items, the order is based on their values, for embedded lists, the order is based on the minimum value item. For this purpose, the embedded lists should also be sorted. The resulting list for the above example, is [1, [5,6,7,8,9], [12,13]]. Write a function which accomplish this, and the function requires another function for list sorting.
+Code Prototype: SortEmbedded.py
+
+Question -3: in Python, Digital images are stored in memory as numpy arrays. In the little project, we ignore numpy array, and temporarily, we store a 2d matrix in list, for example, [[1,2,3], [4,5,6]] denotes a 2x3 matrix. the purpose of this project is to write a function which accept such a matrix, and returns its transpose. Take the same, example, the transpose is [[1,4], [2,5], [3,6]]
+Code prototype: MatTranspose.py
+
+Question -2: Write a function, which takes a list as input, the list contains numbers and numbers in strings, for example, [1, '234', '456', 670., '91000'], in this example, the first element 1 is a number, while the second, the third, and the fifth '234', '456', '91000', are numbers in strings. the function returns the sum of all these numbers. i.e., it will extract numbers in strings , and then add them to other numbers. For the above example, the sum is 92361.
+Code prototype: SumOfItems.py
+
+Question -1: Write a function which accept a list, the list contains numbers, or other sub-lists, in turn, these sub-lists contain numbers, the function will flatten the list, which means, the numbers in the list, and those in the sub-lists will be put into a bigger list, and returned by the function. For example, list a=[1, [2], [3,4], [5, 6, 7], 8], it contains numbers 1, and 8, and sub-lists [2], [3,4], [5, 6, 7], which in turn contain numbers, the resulting list after the processing is [1, 2, 3, 4, 5, 6, 7, 8]
+Code prototype: FlattenList.py
+
+Question 0: Write a function which takes a string as the only parameter, this string contains an integer number or a float number, the function return the number contained in the parameter. For example, if the string is '123.456', the function will return 123.456, as another example, if the stirng contains '12345', the function will take 12345 as return value.
+Code prototype: StringToNumber.py
+
+Question 1: Given an input in the form of a positive integer n,
+write a function taking the positive integer as the only parameter,
+and printing out a triangle-shaped pattern made of the star character (*). 
+Here n specifies the number of rows in the pattern.
+The number of stars in each row increases by 2 each time.
+For example:
+If n = 3, the output of the function is
+  *
+ ***
+*****
+If n = 4, the output:
+   *
+  ***
+ *****
+*******
+
+Code prototype: StarTriangle.py
+
+Hint: to print something without newline, use end='' parameter for python function print, for example, print('hello', end='')
+
+Question 2：Given limit as a positive integer, write a function that return the sum of multiples of 3 and 5 between 0 and limit. Obviously,
+the function takes limit as the only parameter.
+As an example, if limit=20, then it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
+Code prototype: SumOfMultiplesOf3And5.py
+
+Question 3: Given n as a positive integer, write a founction that cycle through every number from 1 to n, and put the number into a list, if the number is divisible by 4, then instead of putting the number itself into list, it puts “Fizz” into it. If the number is divisible by 6, then instead of putting the number itself onto the list, it puts “Buzz” onto it. If the number is divisible by both 4 and 6, then it puts “FizzBuzz” onto it. If the number doesn’t satisfy any of these conditions, simply puts the number itself onto the list. The list will be the only return from the function.
+
+For example: if n = 13, then the list returned from the function looks like: [1, 2, 3, Fizz, 5, Buzz, 7, Fizz, 9, 10, 11, FizzBuzz, 13]
+Code prototype: FizzBuzz.py
+
+Question 4: Write a function which return the sum of all digits in a positive integer n, this positive integer n is the only parameter of the function. For example, for n = 123, then the function will return 1+2+3=6
+Code prototype: SumOfDigits.py
+
+Question 5: Write a function wich takes a string as parameter, and sum all numbers in the string and then return the sum. The numbers in the string is separated by space(' ').
+Hint: one can use split function provided by the str class to split all sub-stirngs separated by ' '. and then use isnumeric which is also a str provided method to check if a sub-string is a number or not.
+Code prototype: SumOfNumbersInString.py
+
+Question 6: Write a function which takes 3 numbers as input, and return the maximum of the three numbers.
+Hint: one can use python function max to get the bigger one from two numbers.
+Code prototype: MaxOfThree.py
+
+Question 7: Write a function in Python that accepts a positive integer and returns the equivalent binary number. The returned binary number should be stored in a string. To make this simple, the decimal number will always be less than 1,024, so the binary number returned will always be less than ten digits long.
+Here is an example: if the function input is 32 it will return "100000"
+Hint: The bits of a positive number can be obtained by dividing it by 2 and collecting remainders. 
+Code prototype: DecToBin.py
+
+Question 8: Create a function in Python that accepts two parameters. The first will be a list of numbers. The second parameter will be a string that can be one of the following values: "asc", "desc", and "none".
+
+If the second parameter is "asc", then the function should return a list with the numbers in ascending order. If it's "desc", then the list should be in descending order, and if it's "none" it should return the original list unaltered.
+The restriction of thie question is, after sorting, the original list should not be modified.
+Code prototype: SortList.py
+
+Question 9: Write a function which takes a positive integer as input, and return the number with all digits of the original number reversed. For example, if the integer number is 123, the return integer number is 321, if the integer number is 100, the returned is 1.
+Code prototype: ReverDigits.py
+
+Question 10: Write a function in Python, which accepts two sorted lists of numbers, merge them into one list. In the merged list, the numbers are still in sorted order. The function has the merged list as its return value.
+Code prototype: MergeSorted.py
+
+Question 11: Write a Python function which takes a list as parameter, remove duplicate consecutive elements from the list and leave only one if they are duplicates, the resulting list is returned by the function.
+Note: only consecutive duplicative elements are removed. for example, [0., 0., 1., 0.] will result in [0., 1., 0.], not [0. 1.] 
+Code prototype: RemoveDuplicate.py
+
+Question 12: Write a python function, which takes two positive integer parameters, m, and n, m represents the number of heads, and n the number of legs. these heads come from chickens and pigs, so do the legs. The function determines how many chickens and how many pigs there, and return them as a tuple. for example, 
+if We have a count of 35 heads and 94 legs among the chickens and pigs, we will get (23, 12), i.e., 23 chickens, and 12 pigs as return value.
+Code prototype: CountHeadsAndLegs.py
+
+Question 13: Write a python function, which takes two parameters, the first parameter A is a list, and the second k is an integer. left rotate the list A, and return the resulting list. If k is positive, for example, 1, list is left shifted by 1, [ 1, 2, 3] will be resulting to [3, 1, 2]. if k is negative then right shift is performed. if k is 0 no shift, and the original list is returned.
+Code prototype: LeftShift.py
+
+Question 14: Write a python function, which takes a positive integer as parameter. this parameter represents year ( for example, 2021, and etc ), the function return True if the year is a leap year, otherwise not.
+Hint: leap year can be evenly divided by 4, but if the year is also evenly divided by 100, then for the year to be a leap year, it should also be evenly divided by 400. 
+Code prototype: LeapYear.py
+
+Question 15: Write a python function, which takes two numbers as parameters a, b, and returned the swap numbers. for example, if a = 3, b = 5., the function returns 5., 3
+Code prototype: swap.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
